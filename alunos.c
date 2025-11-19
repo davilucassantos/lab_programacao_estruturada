@@ -20,10 +20,10 @@ typedef struct {
 // Função principal
 // ================================================================
 int main() {
-    FILE* arq = fopen("alunos.bin", "r+b");
+    FILE* arq = fopen("alunos.dat", "r+b");
 
     if (arq == NULL) {
-        arq = fopen("alunos.bin", "w+b");
+        arq = fopen("alunos.dat", "w+b");
         if (arq == NULL) {
             printf("Erro ao criar o arquivo!\n");
             return 1;
